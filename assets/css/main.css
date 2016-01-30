@@ -375,6 +375,7 @@ hr {
   bottom: 100px;
   left: 23px;
   float: left;
+  z-index: 2;
 }
 
 .home-wrap header .site-nav .icons a {
@@ -387,7 +388,7 @@ hr {
 }
 
 .home-wrap header .site-nav ul {
-  margin: 350px 0;
+  margin: 250px 0;
   padding: 0 20px 0 0;
   text-align: center;
   line-height: 2;
