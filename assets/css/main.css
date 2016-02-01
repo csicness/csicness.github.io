@@ -599,8 +599,8 @@ section.gallery .fotorama {
   width: 100%;
 }
 
-section.gallery .fotorama_nav_frame {
-  padding-top: 5px !important;
+section.gallery .fotorama__nav-wrap {
+  margin-top: 10px;
 }
 
 section.gallery button {
@@ -711,39 +711,13 @@ footer p {
   color: white;
 }
 
-@media (max-width: 640px){
+@media (max-width: 800px){
   .home-wrap{
     display: block;
   }
   .home-wrap .home-sections{
     margin: 0;
     display: block;
-  }
-  .home-wrap .home-sections section{
-    margin: 10% 0;
-    padding: 25px 0;
-  }
-  .home-wrap .home-sections section .home-container{
-    height: 175px;
-  }
-  .home-wrap .home-sections section .title{
-    flex: 0 0 auto;
-    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));
-  }
-  .home-wrap .home-sections section .title:nth-child(n){
-    margin-right: 30px;
-  }
-  .home-wrap .home-sections section .title:last-child{
-    margin-right: 0;
-  }
-  .home-wrap .home-sections section .title:nth-child(1n){
-    margin-right: 0;
-  }
-  .home-wrap .home-sections section .title h1{
-    font-size: 60px;
-  }
-  .home-wrap .home-sections section .title h3{
-    font-size: 23px;
   }
   .home-wrap header{
     position: static;
@@ -889,6 +863,44 @@ footer p {
     -webkit-transition-delay: 0.9s;
             transition-delay: 0.9s;
   }
+  .home-wrap header .mobile-wrapper #menu .icons{
+    position: absolute;
+    right: 40px;
+    top: 25px;
+  }
+  .home-wrap header .mobile-wrapper #menu .icons a{
+    margin-left: 20px;
+    color: white;
+  }
+}
+
+@media (max-width: 640px){
+  .home-wrap .home-sections section{
+    margin: 10% 0;
+    padding: 25px 0;
+  }
+  .home-wrap .home-sections section .home-container{
+    height: 175px;
+  }
+  .home-wrap .home-sections section .title{
+    flex: 0 0 auto;
+    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));
+  }
+  .home-wrap .home-sections section .title:nth-child(n){
+    margin-right: 30px;
+  }
+  .home-wrap .home-sections section .title:last-child{
+    margin-right: 0;
+  }
+  .home-wrap .home-sections section .title:nth-child(1n){
+    margin-right: 0;
+  }
+  .home-wrap .home-sections section .title h1{
+    font-size: 60px;
+  }
+  .home-wrap .home-sections section .title h3{
+    font-size: 23px;
+  }
   section.about h2{
     flex: 0 0 auto;
     width: calc(99.99% * 1/1 - (30px - 30px * 1/1));
@@ -1033,6 +1045,39 @@ footer p {
   }
 }
 
+@media (max-width: 800px) and (min-height: 680px){
+  .home-wrap header .mobile-wrapper #menu li.animate:nth-of-type(1){
+    top: 300px;
+  }
+  .home-wrap header .mobile-wrapper #menu li.animate:nth-of-type(2){
+    top: 400px;
+  }
+  .home-wrap header .mobile-wrapper #menu li.animate:nth-of-type(3){
+    top: 500px;
+  }
+  .home-wrap header .mobile-wrapper #menu li.animate:nth-of-type(4){
+    top: 600px;
+  }
+}
+
+@media (max-width: 1366px){
+  section.about h2{
+    font-size: 30px;
+  }
+  section.about span{
+    font-size: 18px;
+  }
+  section.about p{
+    font-size: 12px;
+  }
+  section.gallery .container{
+    width: 80%;
+  }
+  section.gallery .fotorama__wrap{
+    width: 80% !important;
+  }
+}
+
 @media (max-width: 1040px){
   section.about div{
     display: flex;
@@ -1045,5 +1090,25 @@ footer p {
     height: 200px;
     width: 200px;
     margin-top: 90px;
+  }
+}
+
+@media (max-width: 1366){
+  section.gallery .fotorama__stage{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1000px){
+  section.gallery .fotorama__nav-wrap{
+    overflow: hidden;
   }
 }
