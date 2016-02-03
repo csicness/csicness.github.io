@@ -1013,11 +1013,12 @@ footer .upTop {
   section.contact .contactContainer .contactInfo form label span textarea{
     width: 300px;
   }
-  section.contact .contactContainer .contactInfo form .labelNames .split{
-    display: block;
-  }
   section.contact .contactContainer .contactInfo form .labelNames .split input{
     margin: 0 auto;
+  }
+  section.contact .contactContainer .contactInfo form .labelNames .split{
+    margin-left: 0;
+    display: block;
   }
   section.contact .contactContainer .contactInfo form .sendWrap #sendButton{
     margin-top: 10px;
