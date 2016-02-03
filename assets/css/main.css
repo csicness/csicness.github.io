@@ -883,6 +883,9 @@ footer .upTop {
     margin-left: 20px;
     color: white;
   }
+  section.gallery .fotorama__arr{
+    display: none;
+  }
   footer .upTop{
     display: block;
   }
