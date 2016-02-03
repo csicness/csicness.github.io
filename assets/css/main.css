@@ -497,7 +497,6 @@ section.about p:nth-child(2n){
 
 section.about p span {
   font-size: 24px;
-  font-weight: bold;
   font-style: italic;
   letter-spacing: 0.1em;
 }
@@ -678,8 +677,8 @@ section.contact .contactContainer .contactInfo form label span input:focus, sect
 }
 
 section.contact .contactContainer .contactInfo form .labelNames .split {
-  margin-right: 15px;
-  margin-left: 15px;
+  margin-right: 25px;
+  margin-left: 25px;
   margin-bottom: 20px;
   display: inline-block;
 }
@@ -717,6 +716,7 @@ footer .upTop {
   color: white;
   margin: 0px;
   padding: 0px;
+  text-decoration: none;
 }
 
 @media (max-width: 800px){
@@ -1080,9 +1080,6 @@ footer .upTop {
   }
   section.about p{
     font-size: 12px;
-  }
-  section.gallery .container{
-    width: 80%;
   }
   section.gallery .fotorama__wrap{
     width: 80% !important;
