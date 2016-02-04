@@ -602,13 +602,28 @@ section.gallery .fotorama__nav-wrap {
   margin-top: 10px;
 }
 
-section.gallery button {
+section.gallery .button-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 15px;
+}
+
+section.gallery .button-wrap button {
   padding: 10px 50px;
   font-size: 16px;
   color: white;
   background: black;
   border-radius: 10px;
-  margin: 15px auto;
 }
 
 section.contact .contactContainer {
@@ -878,9 +893,6 @@ footer .upTop {
     margin-left: 20px;
     color: white;
   }
-  section.gallery .fotorama__arr{
-    display: none;
-  }
   footer .upTop{
     display: block;
   }
@@ -980,12 +992,15 @@ footer .upTop {
     padding: 5px;
   }
   section.gallery .fotorama{
-    height: 350px;
-    width: 350px;
-    margin: 0 auto;
+    height: 400px;
+    width: 400px;
   }
-  section.gallery button{
+  section.gallery .button-wrap{
     margin-top: 10px;
+  }
+  section.gallery .button-wrap button{
+    padding: 10px 15px;
+    font-size: 14px;
   }
   section.contact .contactContainer .contactInfo form label span{
     font-size: 14px;

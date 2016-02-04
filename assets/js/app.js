@@ -1,7 +1,8 @@
 $(function() {
+	var $button = $('section.gallery .button-wrap');
 
 	$('.fotorama').hide();
-	$('section.gallery button').hide();
+	$button.hide();
 
 	// Gallery Show 
 	$('.container div').on('click', function () {
@@ -9,14 +10,17 @@ $(function() {
 		
 		$(this).parent('div').hide();
 		$('#'+category).show();
-		$('section.gallery button').show();
 		setTimeout(function() {
 			$('#'+category).fotorama();
 		}, 1000);
+		setTimeout(function() {
+			$button.show();
+			$('.button-wrap button').fadeIn('slow');
+		}, 1500);
 	});
 
 	// Gallery Back Button
-	$('section.gallery button').on('click', function () {
+	$('.button-wrap button').on('click', function () {
 		$(this).hide();
 		$('.fotorama').hide();
 		$('section.gallery .container').show();
