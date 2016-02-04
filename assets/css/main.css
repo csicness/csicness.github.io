@@ -977,6 +977,9 @@ footer .upTop {
   section.about div img:nth-child(1n){
     margin-right: 0;
   }
+  section.gallery button{
+    margin: 10px auto;
+  }
   section.gallery h2{
     padding-bottom: 0;
   }
@@ -989,16 +992,16 @@ footer .upTop {
   }
   section.gallery .container div{
     flex: 0 0 auto;
-    width: calc(99.999999% * 1/2);
+    width: calc(99.99% * 1/2 - (30px - 30px * 1/2));
     float: none;
   }
   section.gallery .container div:nth-child(n){
-    margin-right: 0;
+    margin-right: 30px;
   }
   section.gallery .container div:last-child{
     margin-right: 0;
   }
-  section.gallery .container div:nth-child(3n){
+  section.gallery .container div:nth-child(1n){
     margin-right: 0;
   }
   section.gallery .container div span{
@@ -1015,6 +1018,7 @@ footer .upTop {
   }
   section.contact .contactContainer .contactInfo form label span textarea{
     width: 300px;
+    margin: 0 auto;
   }
   section.contact .contactContainer .contactInfo form .labelNames .split input{
     margin: 0 auto;
