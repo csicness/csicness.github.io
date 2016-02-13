@@ -954,11 +954,11 @@ footer .upTop {
     max-width: 300px;
     margin-left: auto;
     margin-right: auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
     -webkit-flex-direction: column-reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
   }
   section.about div p{
     width: 100%;
