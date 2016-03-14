@@ -1,4 +1,4 @@
-$(function() {
+(function($) {
 	var $button = $('section.gallery .button-wrap');
 
 	$('.fotorama').hide();
@@ -26,7 +26,7 @@ $(function() {
 		$('section.gallery .container').show();
 	});
 
-});
+})(jQuery);
 (function($) {
 
 	"use scrict";

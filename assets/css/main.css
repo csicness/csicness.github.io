@@ -752,7 +752,7 @@ footer .upTop {
   text-decoration: none;
 }
 
-@media (max-width: 800px){
+@media screen and (max-width: 800px){
   .home-wrap{
     display: block;
   }
@@ -920,7 +920,7 @@ footer .upTop {
   }
 }
 
-@media (max-width: 640px){
+@media screen and (max-width: 640px){
   .home-wrap .home-sections section{
     margin: 10% 0;
     padding: 25px 0;
@@ -1039,7 +1039,7 @@ footer .upTop {
   }
 }
 
-@media (max-width: 1024px){
+@media screen and (max-width: 1024px){
   .home-wrap .home-sections section .title{
     flex: 0 0 auto;
     width: calc(99.99% * 1/1 - (30px - 30px * 1/1));
@@ -1062,19 +1062,19 @@ footer .upTop {
   }
 }
 
-@media (min-height: 1024px){
+@media screen and (min-height: 1024px){
   .home-wrap header .site-nav .icons{
     bottom: 200px;
   }
 }
 
-@media (min-height: 1200px){
+@media screen and (min-height: 1200px){
   .home-wrap header .site-nav .icons{
     bottom: 480px;
   }
 }
 
-@media (max-width: 800px) and (min-height: 680px){
+@media screen and (max-width: 800px) and (min-height: 680px){
   .home-wrap header .mobile-wrapper #menu li.animate:nth-of-type(1){
     top: 300px;
   }
@@ -1089,7 +1089,7 @@ footer .upTop {
   }
 }
 
-@media (max-width: 1366px){
+@media screen and (max-width: 1366px){
   section.about h2{
     font-size: 30px;
   }
@@ -1116,7 +1116,7 @@ footer .upTop {
   }
 }
 
-@media (max-width: 1040px){
+@media screen and (max-width: 1040px){
   section.about div{
     display: flex;
   }
@@ -1131,7 +1131,7 @@ footer .upTop {
   }
 }
 
-@media (min-width: 1000px){
+@media screen and (min-width: 1000px){
   section.gallery .fotorama__nav-wrap{
     overflow: hidden;
   }

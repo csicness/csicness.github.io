@@ -88,20 +88,22 @@
           <div class="contactContainer">
             <h2>Contact Me</h2>
             <div class="contactInfo">
-              <form action="//formspree.io/csicartist@gmail.com" method="POST">
+              <form id="contactForm" action="//formspree.io/csicartist@gmail.com" method="POST">
+                <input type="text" name="_gotcha" style="display:none"/>
                 <div class="labelNames">
                   <label class="split"><span>Your Name
-                      <input type="text" name="name"/></span></label>
+                      <input type="text" name="name" required="required"/></span></label>
                   <label class="split"><span>Your Email
-                      <input type="email" name="_replyto"/></span></label>
+                      <input type="email" name="_replyto" required="required"/></span></label>
                 </div>
                 <div class="textMessage">
                   <label><span>Send me a message!
-                      <textarea name="message"></textarea></span></label>
+                      <textarea name="message" required="required"></textarea></span></label>
                 </div>
                 <div class="sendWrap">
                   <input id="sendButton" type="submit" value="Send"/>
                 </div>
+                <input type="hidden" name="_next" value="//csicness.github.io"/>
               </form>
             </div>
           </div>
